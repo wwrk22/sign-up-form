@@ -38,9 +38,12 @@ Sidebar div with its image and credit
 }
 
 #sidebar-img-credit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
   position: absolute;
-  bottom: 1rem;
-  margin-left: 1rem;
+  bottom: 0.5rem;
 
   font-size: 0.8rem;
   color: #F1F2F6;
