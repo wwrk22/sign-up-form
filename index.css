@@ -32,16 +32,64 @@ body {
   align-items: center;
   padding: 0 12%;
 
-  background-color: #F1F2F6;
+  background-color: #84ADD7;
+  color: #F1F2F6;
 }
 
 .description-box > p {
   font-size: 1.25rem;
 }
 
-/* Form box */
-.form-box {
+/* Account box */
+.account-box {
   flex: 2.5;
+  padding: 2% 10%;
+
+  background-color: #CCBAA1;
+  color: #7B675B;
+}
+
+/* "Sign-up" heading */
+.sign-up-heading > h2 {
+  margin-bottom: 0.2rem;
+}
+
+/* Form */
+.form-box {
+  width: 70%;
+}
+
+.form-box > form {
+  border: 2px solid #7B675B;
+}
+
+form > .form-row {
+  display: flex;
+
+  padding: 1rem 0;
+  border: 2px solid #7B675B;
+}
+
+/* Input box */
+.input-box {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 5%;
+}
+
+.input-box > label {
+  font-size: 0.8rem;
+}
+
+input {
+  appearance: none;
+
+  border: 1px solid #F1F2F6;
+  padding: 0.4rem;
+
+  font-family: rockwell;
+  font-size: 1.2rem;
 }
 
 /* Sidebar box */
