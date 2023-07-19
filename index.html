@@ -50,34 +50,34 @@
           <form action="https://httpbin.org" method="post">
             <div class="form-row">
               <div class="input-box">
-                <label for="first-name">FIRST NAME</label>
-                <input id="first-name" type="text" name="first_name" />
+                <label for="first-name">FIRST NAME *</label>
+                <input id="first-name" type="text" name="first_name" required pattern="^[a-zA-Z]$" maxlength="20" />
               </div>
               <div class="input-box">
-                <label for="last-name">LAST NAME</label>
-                <input id="last-name" type="text" name="last_name" />
+                <label for="last-name">LAST NAME *</label>
+                <input id="last-name" type="text" name="last_name" required pattern="^[a-zA-Z]$" maxlength="20" />
               </div>
             </div><!-- .form-row -->
 
             <div class="form-row">
               <div class="input-box">
-                <label for="user-email">EMAIL</label>
-                <input id="user-email" type="email" name="user_email" />
+                <label for="user-email">EMAIL *</label>
+                <input id="user-email" type="email" name="user_email" required />
               </div>
               <div class="input-box">
                 <label for="phone-number">PHONE NUMBER</label>
-                <input id="phone-number" type="tel" name="phone_number" />
+                <input id="phone-number" type="tel" name="phone_number" pattern="^([0-9]{10})|([0-9]{3}[-. ][0-9]{3}[-. ][0-9]{4})$" />
               </div>
             </div><!-- .form-row -->
 
             <div class="form-row">
               <div class="input-box">
-                <label for="user-password">PASSWORD</label>
-                <input id="user-password" type="password" name="user_password" />
+                <label for="user-password">PASSWORD *</label>
+                <input id="user-password" type="password" name="user_password" required minlength="8" maxlength="16"/>
               </div>
               <div class="input-box">
-                <label for="user-password-confirm">CONFIRM PASSWORD</label>
-                <input id="user-password-confirm" type="password" name="user_password_confirm" />
+                <label for="user-password-confirm">CONFIRM PASSWORD *</label>
+                <input id="user-password-confirm" type="password" name="user_password_confirm" required minlength="8" maxlength="16" />
               </div>
             </div><!-- .form-row -->
 
