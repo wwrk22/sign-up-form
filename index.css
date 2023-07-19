@@ -13,18 +13,22 @@ body {
   padding: 1rem;
 }
 
-.img-sidebar {
+.sidebar {
   flex: 1;
+
   height: 100%;
   border: 2px solid blue;
+  background-color: #84ADD7;
 }
 
 .content-box {
   flex: 2.3;
+
   height: 100%;
   border: 2px solid green;
 }
 
-#starry-night {
+#sidebar-img {
   width: 100%;
+  height: 100%;
 }
