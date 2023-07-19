@@ -60,14 +60,25 @@ body {
 }
 
 .form-box > form {
-  border: 2px solid #7B675B;
 }
 
 form > .form-row {
   display: flex;
-
   padding: 1rem 0;
-  border: 2px solid #7B675B;
+}
+
+.form-row > button {
+  appearance: none;
+
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: #F1F2F6;
+  background-color: #705D52;
+  border: 1px solid #705D52;
+  border-radius: 0.8rem;;
+
+  margin: 0;
+  padding: 0.8rem 1.5rem 0.4rem 1.5rem;
 }
 
 /* Input box */
@@ -87,9 +98,19 @@ input {
 
   border: 1px solid #F1F2F6;
   padding: 0.4rem;
+  width: 90%;
 
   font-family: rockwell;
   font-size: 1.2rem;
+}
+
+/* Log in box */
+.log-in-box a {
+  font-size: 1.1rem;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Sidebar box */
