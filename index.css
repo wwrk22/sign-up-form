@@ -13,14 +13,6 @@ body {
   padding: 1rem;
 }
 
-.sidebar {
-  flex: 1;
-
-  height: 100%;
-  border: 2px solid blue;
-  background-color: #84ADD7;
-}
-
 .content-box {
   flex: 2.3;
 
@@ -28,7 +20,32 @@ body {
   border: 2px solid green;
 }
 
+/**
+Sidebar div with its image and credit
+*/
+.sidebar {
+  flex: 1;
+  position: relative;
+
+  height: 100%;
+  border: 2px solid blue;
+  background-color: #84ADD7;
+}
+
 #sidebar-img {
   width: 100%;
   height: 100%;
+}
+
+#sidebar-img-credit {
+  position: absolute;
+  bottom: 1rem;
+  margin-left: 1rem;
+
+  font-size: 0.8rem;
+  color: #F1F2F6;
+}
+
+#sidebar-img-credit > a {
+  color: inherit;
 }
