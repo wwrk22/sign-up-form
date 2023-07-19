@@ -93,18 +93,29 @@ form > .form-row {
   font-size: 0.8rem;
 }
 
+/* input box and font */
 input {
   appearance: none;
 
   border: 1px solid #F1F2F6;
-  padding: 0.4rem;
+  padding: 0.6rem;
   width: 90%;
 
   font-family: rockwell;
   font-size: 1.2rem;
 }
 
+/* input box outline */
+input:focus {
+  outline: 2px solid #84ADD7;
+  box-shadow: 0 0 0.25rem 0.25rem #9AB6D3 inset;
+}
+
 /* Log in box */
+.log-in-box {
+  color: #73665E;
+}
+
 .log-in-box a {
   font-size: 1.1rem;
   font-family: inherit;
