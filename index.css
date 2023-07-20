@@ -98,7 +98,7 @@ input {
   appearance: none;
 
   border: 1px solid #F1F2F6;
-  padding: 0.6rem;
+  padding: 0.6rem 0.6rem 0.4rem 0.6rem;
   width: 90%;
 
   font-family: rockwell;
@@ -107,8 +107,30 @@ input {
 
 /* input box outline */
 input:focus {
-  outline: 2px solid #84ADD7;
+  outline: none;
   box-shadow: 0 0 0.15rem 0.15rem #9AB6D3 inset;
+}
+
+/* Input Validation */
+/* Make box green to indicate valid */
+input[type="text"]:not(:focus):required:valid,
+input[type="email"]:not(:focus):required:valid,
+input[type="password"]:not(:focus):required:valid,
+input[type="tel"]:not(:focus):not(:placeholder-shown) {
+  background-color: #B4CCA1;
+}
+
+/* Make box red to indicate invalid */
+input:not(:focus):invalid {
+  background-color: #C78A87;
+}
+
+input:not(:focus):placeholder-shown {
+  background-color: #FFFFFF;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 /* Log in box */
